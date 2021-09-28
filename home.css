@@ -1,0 +1,302 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+
+/*TOP*/
+.start {
+	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+.start img {
+	display: block;
+    margin: 0 auto;
+}
+
+
+.design {
+    margin-top: 150px;
+    text-align: center;
+}
+.design h3{
+    margin-bottom:1px;
+}
+
+
+.coding {
+    margin-top: 150px;
+    margin-bottom:150px;
+    text-align: center;
+}
+
+.coding h3{
+    margin-bottom:1px;
+}
+
+.index-opacity p {
+    margin-top:0;
+    margin-bottom:35px;
+	opacity: 0.5;
+}
+
+.design p .coding p {
+    font-size : 17px;
+}
+/*TOP終わり*/
+
+
+/*About*/
+.about-title h1{
+    margin-top:0;
+	opacity: 0.5;
+}
+
+.about-prof{
+    margin-top : 100px;
+    line-height: em;
+}
+
+dt {
+    float: left ;
+    clear: left ;
+    margin-right: 0.5em ;
+    width: 120px ;
+    margin-bottom:24px;
+    font-weight : bold;
+}
+
+dd {
+    float: left ;
+    margin-left: 1em ;
+}
+
+dl {
+    bottom: 50px;
+}
+
+.pr dd {
+    line-height: 2em;
+    letter-spacing: 0.2em;
+    margin-bottom : 150px;
+}
+
+.certification dd {
+    line-height: 2em;
+}
+
+.certification dt {
+    margin-top : 3px;
+}
+.flog {
+    position: relative;
+    top : 30px;
+    left :120px;
+}
+
+/*About終わり*/
+/*Hobby*/
+
+
+
+/*横幅94％で左右に余白を持たせて中央寄せ*/
+.slider1 , .slider2{
+    width:94%;
+    margin:50px auto 50px auto;
+}
+
+.slider1 img , .slider2 img{
+    /*スライダー内の画像を50vwにしてレスポンシブ化*/
+    width:40vw;
+    height:25vw;
+}
+
+.slider1 .slick-slide ,.slider2 .slick-slide {
+    /*左右の画像のサイズを80%に*/
+    transform: scale(0.8);
+
+    /*拡大や透過のアニメーションを0.5秒で*/
+    transition:all .5s;
+    opacity: 0.5; /*透過50%*/
+}
+
+.slider1 .slick-slide.slick-center ,.slider2 .slick-slide.slick-center{
+    /*中央の画像のサイズだけ等倍に*/
+    transform: scale(1);
+    opacity: 1; /*透過なし*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,.slick-next{
+    position: absolute;/*絶対配置にする*/
+    top:42%;
+    cursor: pointer;
+    /*outline: none;*/
+    border-top:2px solid rgb(0, 0, 0);/*矢印の色*/
+    border-right:2px solid rgb(0, 0, 0);/*矢印の色*/
+    height: 30px;
+    width: 30px;
+}
+
+
+/*戻る矢印の位置*/
+.slick-prev{
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+/*次へ矢印の位置*/
+.slick-next{
+    right: -5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+    margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+    margin:10px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 18px;/*ドットボタンのサイズ*/
+    height: 18px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.slick-dots .slick-active button {
+    background: rgb(0, 0, 0);
+}
+
+.hobby1-com , .hobby2-com{
+    background-color: #D4D4D4;
+    width : 75%;
+    margin: 75px auto;
+    padding : 5px 0 5px 0;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+.hobby2-com {
+    margin-bottom : 150px;
+}
+
+.lunch {
+    margin-top : 70px;
+}
+
+.live {
+    margin-top : 150px;
+}
+
+.hobby-title h1 {
+    margin-top:0;
+	opacity: 0.5;
+}
+
+
+/*Hobby終わり*/
+
+
+
+
+
+
+/*全体*/
+
+body {
+    max-width: 1200px;
+    margin : 0 auto 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;/*フォント設定*/
+    /* background-image: url("image/background2.JPG");背景画像 */
+    background-attachment: fixed;/*背景固定*/
+}
+
+.main {
+    margin-bottom: 6%;
+    padding-left: 53%;
+}
+ 
+.select li {
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+
+}
+ 
+.select li a {
+  text-decoration: none;
+  color: rgb(2, 0, 0);
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* header h1 {
+    font-size:40px;
+    margin-top : 10px;
+    padding-left :50px;
+    border-bottom: 4px dotted #070000;
+    font-family: 'Noto Sans JP', sans-serif;/*フォント設定*/
+
+header h1  {
+    width: 220px;
+    height: 145px;
+}
+
+/* #footer{
+    background-image: url("image/background2.JPG");
+    background-attachment: fixed;
+    position: fixed;
+    bottom: 0;
+    width:90%;
+} */
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 250px;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+
+
+
+/*ローディング画面*/
+#splash {
+    /* fixed で全画面固定*/
+    position:fixed;
+    z-index:999;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: #333;
+    text-align: center;
+    color:#fff;
+}
+
+/*スマートフォン向けCSS*/
+@media (max-width:767px){
+
+
+}
