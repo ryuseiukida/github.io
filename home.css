@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
-
 /*TOP*/
 .start {
 	margin-right: calc(50% - 50vw);
@@ -11,7 +10,6 @@
 	display: block;
     margin: 0 auto;
 }
-
 
 .design {
     margin-top: 150px;
@@ -52,7 +50,7 @@
 
 .about-prof{
     margin-top : 100px;
-    line-height: em;
+    line-height: 1em;
 }
 
 dt {
@@ -95,8 +93,6 @@ dl {
 /*About終わり*/
 /*Hobby*/
 
-
-
 /*横幅94％で左右に余白を持たせて中央寄せ*/
 .slider1 , .slider2{
     width:94%;
@@ -138,10 +134,9 @@ dl {
     width: 30px;
 }
 
-
 /*戻る矢印の位置*/
 .slick-prev{
-    left: -1.5%;
+    left: -5%;
     transform: rotate(-135deg);
 }
 
@@ -171,7 +166,6 @@ dl {
     display:block;
     border-radius:50%;
     background-color: rgb(255, 255, 255);
-    
 }
 
 .slick-dots .slick-active button {
@@ -207,11 +201,6 @@ dl {
 
 /*Hobby終わり*/
 
-
-
-
-
-
 /*全体*/
 
 body {
@@ -242,43 +231,22 @@ body {
 }
 
 
-
-
-
-
-/* header h1 {
-    font-size:40px;
-    margin-top : 10px;
-    padding-left :50px;
-    border-bottom: 4px dotted #070000;
-    font-family: 'Noto Sans JP', sans-serif;/*フォント設定*/
-
 header h1  {
     width: 220px;
     height: 145px;
 }
 
-/* #footer{
-    background-image: url("image/background2.JPG");
-    background-attachment: fixed;
-    position: fixed;
-    bottom: 0;
-    width:90%;
-} */
-
 
 #footer {
     position: fixed;
     bottom: 0;
-    right: 250px;
+    left: 80%;
 }
 
 img {
     max-width:100%;
     height:auto;
 }
-
-
 
 
 /*ローディング画面*/
@@ -295,8 +263,633 @@ img {
     color:#fff;
 }
 
-/*スマートフォン向けCSS*/
-@media (max-width:767px){
+
+    @media screen and (max-width: 1024px) {
+    /* 1024pxまでの幅の場合に適応される */
+        /*全体*/
+        body {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        .main {
+            padding-bottom:10%;
+            padding-left: 37%;
+            margin-top:0;
+        }
+
+        .select li {
+            font-size: 30px;
+            padding:0;
+            width: 160px;
+            display: inline-block;
+        }
+        /*全体終わり*/
+
+        /*Top*/
+        .design  p{
+            font-size: 22px;
+            word-break: break-all;
+        }
+        .coding  p{
+            font-size: 22px;
+            word-break: break-all;
+        }
+        /*Top終わり*/
+        /*About*/
+        .about-title h1 {
+            font-size : 40px;
+        }
+        .flog img{
+            margin-right : 90px;
+            margin-bottom : 30px;
+        }
+
+        .about-prof dt , .about-prof dd{
+            font-size: 20px;
+        }
+        .pr dd {
+            font-size: 20px;
+            line-height: 2em;
+            letter-spacing: 0.2em;
+            margin-bottom : 100px;
+        }
+        /*About終わり*/
+        /*Hobby*/
+        .hobby-title h1 {
+            font-size : 40px;
+        }
+
+        .lunch h2 , .live h2 {
+            font-size : 40px;
+        }
+        .slider1 , .slider2{
+            width:90%;
+            margin:50px auto 50px auto;
+        }
+        
+        .slider1 img , .slider2 img{
+            /*スライダー内の画像を50vwにしてレスポンシブ化*/
+            width:80vw;
+            height:50vw;
+            margin-right: 30px;
+        }
+        .slick-dots button {
+            color: transparent;
+            outline: none;
+            width: 30px;/*ドットボタンのサイズ*/
+            height: 30px;/*ドットボタンのサイズ*/
+            display:block;
+            border-radius:50%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        
+        .hobby1-com , .hobby2-com{
+            background-color: #D4D4D4;
+            width : 100%;
+            margin-top: 96px;
+
+            padding : 15px 7px 15px 8px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 20px;
+            word-break: break-all;
+        }
+        /*Hobby終わり*/
+    }
+    @media screen and (max-width: 768px) {
+    /* 768pxまでの幅の場合に適応される */
+
+        /*全体*/
+        body {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .main {
+
+            padding-bottom:10%;
+            padding-left: 37%;
+            margin-top:0;
+        }
+
+        .select li {
+            font-size: 26px;
+            width: 120px;
+            display: inline-block;
+        }
+        /*全体終わり*/
+        /*Top*/
+        .design p , .coding p{
+            font-size: 18px;
+        }
+        /*Top終わり*/
+        /*About*/
+        .flog img{
+            margin-left : 80px;
+            margin-bottom : 30px;
+        }
+
+        .pr dd {
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            margin-bottom : 100px;
+            word-break: break-all;
+        }
+        /*About終わり*/
+        /*Hobby*/
+        .slider1 , .slider2{
+            width:94%;
+            margin:50px auto 50px auto;
+        }
+        
+        .slider1 img , .slider2 img{
+            /*スライダー内の画像を50vwにしてレスポンシブ化*/
+            width:80vw;
+            height:50vw;
+            margin-right: 30px;
+        }
+        .slick-dots button {
+            color: transparent;
+            outline: none;
+            width: 30px;/*ドットボタンのサイズ*/
+            height: 30px;/*ドットボタンのサイズ*/
+            display:block;
+            border-radius:50%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        
+        .hobby1-com , .hobby2-com{
+            background-color: #D4D4D4;
+            width : 100%;
+            margin-top: 96px;
+
+            padding : 15px 7px 15px 8px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 18px;
+        }
+        /*Hobby終わり*/
+
+    }
+    @media screen and (max-width: 540px) {
+    /* 540pxまでの幅の場合に適応される */
+        body {
+            margin-left: 2%;
+            margin-right: 2%;            
+        }
+
+        .main {
+            padding-bottom:10%;
+            padding-left: 50%;
+            margin-top:0;
+            margin-bottom : 0;
+        }
+
+        .select {
+            margin-top:0;
+        }
+        .select li {
+            font-size: 24px;
+            width: 120px;
+            display: inline-block;
+        }
+        /*全体終わり*/
+        /*Top*/
+        .design p , .coding p{
+            font-size: 14px;
+        }
+
+        /*Top終わり*/
+        /*About*/
+        .about-title h1{
+            margin: 0;
+            font-size : 30px;
+        }
+        .flog {
+            position: relative;
+            left : 10%;
+        }
+        .flog img{
+            margin-bottom : 40px;
+            margin-right : 10px;
+        }
+
+        .about-prof{
+            margin-top : 50px;
+            line-height: em;
+        }
+
+        .about-prof dt , .about-prof dd{
+            font-size: 14px;
+        }
+
+        .pr dd {
+            line-height: 1.7em;
+            letter-spacing: 0.1em;
+            margin-bottom : 50px;
+            word-break: break-all;
+        }
+
+        dt {
+            float: left ;
+            clear: left ;
+            margin-right: 0.5em ;
+            width: 50px ;
+            margin-bottom:30px;
+            font-weight : bold;
+        }
 
 
-}
+        /*About終わり*/
+        /*Hobby*/
+        .hobby-title h1{
+            font-size : 30px;
+        }
+
+        .lunch h2 , .live h2 {
+            font-size: 24px;
+        }
+
+        .slider1 , .slider2{
+            width:90%;
+            margin:50px auto 50px auto;
+        }
+        
+        .slider1 img , .slider2 img{
+            /*スライダー内の画像を50vwにしてレスポンシブ化*/
+            width:80vw;
+            height:50vw;
+            margin-right: 30px;
+        }
+        .slick-dots button {
+            color: transparent;
+            outline: none;
+            width: 20px;/*ドットボタンのサイズ*/
+            height: 20px;/*ドットボタンのサイズ*/
+            display:block;
+            border-radius:50%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        
+        .hobby1-com {
+            background-color: #D4D4D4;
+            width : 96%;
+            margin-top: 96px;
+            padding : 15px 3px 15px 3px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 14px;
+        }
+
+        .hobby2-com {
+            width : 94%;
+            margin-top: 40px;
+            padding : 15px 3px 15px 3px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 14px;
+        }
+        /*Hobby終わり*/
+    }
+    @media screen and (max-width: 480px) {
+    /* 480pxまでの幅の場合に適応される */
+        body {
+            margin-left: 2%;
+            margin-right: 2%;  
+        }
+
+        .main {
+            padding-bottom:10%;
+            padding-left: 50%;
+            margin-top:0;
+            margin-bottom : 0;
+        }
+
+        .select {
+            margin-top:0;
+        }
+        .select li {
+            font-size: 24px;
+            width: 120px;
+            display: inline-block;
+        }
+        /*全体終わり*/
+        /*Top*/
+
+        .design {
+            margin-top: 60px;
+            text-align: center;
+        }
+        .design p , .coding p{
+            font-size: 12px;
+        }
+
+        /*Top終わり*/
+        /*About*/
+        .about-title h1{
+            margin: 0;
+            font-size : 30px;
+        } 
+        .flog {
+            position: relative;
+        }
+        .flog img{
+            margin: 0 0 80px 0;
+        }
+
+        .about-prof{
+            margin-top : 50px;
+        }
+
+        .about-prof dt , .about-prof dd{
+            font-size: 12px;
+        }
+
+        .pr dd {
+            line-height: 1.7em;
+            letter-spacing: 0.2em;
+            margin-left : 0;
+            margin-bottom : 50px;
+            word-break: break-all;
+        }
+
+        .pr dt {
+            margin-bottom : 30px;
+        }
+
+        .school dd {
+            margin-left : 20px;
+            margin-bottom:40px;
+        }
+
+
+        dt {
+            float: left ;
+            clear: left ;
+            width: 50px ;
+            margin-right: 10px;
+            margin-bottom:40px;
+            font-weight : bold;
+            white-space: nowrap;
+        }
+
+        .school dt {
+            margin-bottom:20px;
+        }
+
+
+        /*About終わり*/
+        /*Hobby*/
+        .hobby-title h1{
+            font-size : 30px;
+        }
+
+        .lunch h2 , .live h2 {
+            font-size: 24px;
+        }
+
+        .slider1 , .slider2{
+            width:100%;
+            margin:50px auto 50px auto;
+        }
+        
+        .slider1 img , .slider2 img{
+            /*スライダー内の画像を50vwにしてレスポンシブ化*/
+            width:80vw;
+            height:50vw;
+            margin-right: 30px;
+        }
+        .slick-dots button {
+            color: transparent;
+            outline: none;
+            width: 20px;/*ドットボタンのサイズ*/
+            height: 20px;/*ドットボタンのサイズ*/
+            display:block;
+            border-radius:50%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+
+        .slick-dots  {
+            padding : 0 20px 0 0; 
+        }
+
+        /*戻る、次へ矢印の位置*/
+        .slick-prev,.slick-next{
+            border-top:2px solid rgb(255, 255, 255);/*矢印の色*/
+            border-right:2px solid rgb(255, 255, 255);/*矢印の色*/
+        }
+        
+        .hobby1-com {
+            background-color: #D4D4D4;
+            width : 80%;
+            margin-top: 40px;
+            padding : 10px 8px 10px 8px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 14px;
+        }
+
+        .hobby2-com {
+            width : 80%;
+            margin-top: 25px;
+            padding : 10px 3px 10px 3px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 14px;
+            
+        }
+        /*Hobby終わり*/
+    }
+    @media screen and (max-width: 320px) {
+    /* 320pxまでの幅の場合に適応される */
+
+
+
+        body {
+            margin-left: 4%;
+            margin-right: 4%;  
+        }
+
+        .main {
+            padding-bottom:10%;
+            padding-left: 50%;
+            margin-top:0;
+            margin-bottom : 0;
+        }
+
+        .select {
+            margin-top:0;
+        }
+        .select li {
+            font-size: 22px;
+            width: 110px;
+            display: inline-block;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 0;
+            left: 70%;
+        }
+        /*全体終わり*/
+        /*Top*/
+
+        .start img {
+            width: 100vw;
+        }
+        .design {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .coding {
+            margin-top: 100px;
+            margin-bottom: 120px;
+            text-align: center;
+        }
+        
+        .design p , .coding p{
+            font-size: 12px;
+        }
+
+        /*Top終わり*/
+        /*About*/
+        .about-title h1{
+            margin: 0;
+            font-size : 30px;
+        } 
+        .flog {
+            position: relative;
+        }
+        .flog img{
+            margin: 0 0 80px 0;
+            width: 75%; 
+            height: auto; 
+        }
+
+        .about-prof{
+            margin-top : 50px;
+        }
+
+        .about-prof dt , .about-prof dd{
+            font-size: 12px;
+        }
+
+        .pr dd {
+            line-height: 1.7em;
+            letter-spacing: 0.2em;
+            margin-left : 0;
+            margin-bottom : 50px;
+            word-break: break-all;
+        }
+
+        .pr dt {
+            margin-bottom : 30px;
+        }
+
+        .school dd {
+            margin-left : 20px;
+            margin-bottom:40px;
+        }
+
+        .skill dd {
+            margin-bottom: 30px;
+        }
+
+        .skill dd {
+            margin-bottom: 30px;
+        }
+
+        .certification dd{
+            margin-bottom: 40px;
+        }
+
+
+        dt {
+            float: left ;
+            clear: left ;
+            width: 50px ;
+            margin-right: 10px;
+            margin-bottom:40px;
+            font-weight : bold;
+            white-space: nowrap;
+        }
+
+        .school dt {
+            margin-bottom:20px;
+        }
+
+
+        /*About終わり*/
+        /*Hobby*/
+        .hobby-title h1{
+            font-size : 30px;
+        }
+
+        .lunch h2 , .live h2 {
+            font-size: 24px;
+        }
+
+        .slider1 , .slider2{
+            width:100%;
+            margin:50px auto 50px auto;
+        }
+        
+        .slider1 img , .slider2 img{
+            /*スライダー内の画像を50vwにしてレスポンシブ化*/
+            width:90vw;
+            height:50vw;
+            margin-right : 80px;
+        }
+        .slick-dots button {
+            color: transparent;
+            outline: none;
+            width: 15px;/*ドットボタンのサイズ*/
+            height: 15px;/*ドットボタンのサイズ*/
+            display:block;
+            border-radius:50%;
+            background-color: rgb(255, 255, 255);
+            
+        }
+
+
+        /*戻る、次へ矢印の位置*/
+        .slick-prev,.slick-next{
+            border-top:2px solid rgb(255, 255, 255);/*矢印の色*/
+            border-right:2px solid rgb(255, 255, 255);/*矢印の色*/
+        }
+        
+        .hobby1-com {
+            background-color: #D4D4D4;
+            width : 90%;
+            margin-top: 40px;
+            padding : 10px 8px 10px 8px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 13px;
+        }
+
+        .hobby2-com {
+            width : 90%;
+            margin-top: 25px;
+            padding : 10px 3px 10px 3px;
+            text-align: center;
+            line-height: 2em;
+            letter-spacing: 0.1em;
+            font-size: 13px;
+            
+        }
+        /*Hobby終わり*/
+    }
